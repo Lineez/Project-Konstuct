@@ -1,0 +1,21 @@
+.get {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #ffffff url(../img/get/bg.jpg) 50% 0 no-repeat;
+	background-size: cover;
+	max-width: 100vw;
+	height: 100vh;
+	margin-bottom: -5px;
+	&__h2 {
+		font-size: calc(26px + (30 - 26) * ((100vw - 320px) / (1440 - 320)));
+		font-weight: 700;
+		line-height: 36px;
+		text-align: center;
+	}
+
+	&__btn {
+		margin-top: calc(15px + (35 - 15) * ((100vw - 320px) / (1440 - 320)));
+	}
+}

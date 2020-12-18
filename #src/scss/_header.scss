@@ -1,0 +1,51 @@
+.header {
+	background:#D8D8D8 url(../img/header/bg.jpg) center no-repeat;
+	background-size: cover;
+	&__wrap {
+		height: 100vh;
+		padding-top: 41px;
+		padding-bottom: 71px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	&__logo {
+		height: 23px;
+		flex: 1 1 auto;
+	}
+
+	&__title {
+		flex: 1 1 auto;
+	}
+
+	&__h1 {
+		margin-bottom: calc(10px + (21 - 10) * ((100vw - 320px) / (1440 - 320)));
+		font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (1440 - 320)));
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: calc(2px + (5 - 2) * ((100vw - 320px) / (1440 - 320)));
+		color: #ffffff;
+	}
+
+	&__text {
+		font-size: calc(15px + (16 - 15) * ((100vw - 320px) / ( - 320)));
+		font-weight: 600;
+		color: #ffffff;
+		@media (min-width:1441px) {
+			font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1440 - 320)));
+		}
+	}
+
+	&__scroll {
+		font-size: calc(10px + (11 - 10) * ((100vw - 320px) / (1440 - 320)));
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: calc(1px + (3 - 1) * ((100vw - 320px) / (1440 - 320)));
+		color: #ffffff;
+		@media (min-width:1441px) {
+			font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1440 - 320)));
+		}
+	}
+}

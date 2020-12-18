@@ -1,0 +1,95 @@
+.about {
+
+	&__wrap {
+		padding-top: calc(28px + (58 - 28) * ((100vw - 320px) / (1440 - 320)));
+		padding-bottom: calc(40px + (118 - 40) * ((100vw - 320px) / (1440 - 320)));
+	}
+
+	&__h2 {
+		padding-bottom: 10px;
+		&::after {
+			content: '';
+			position: absolute;
+			right: 50%;
+			bottom: 0px;
+			transform: translate(50%);
+			width: 50px;
+			height: 2px;
+			background-color: #00A4E5;
+		}
+	}
+
+	&__row {
+		display: flex;
+		margin-top: 56px;
+		@media (max-width:767px) {
+			flex-direction: column;
+		}
+	}
+
+	&__column {
+		@media (max-width:767px) {
+			flex: 0 0 auto;
+		}
+	}
+	&__column-info {
+		margin-top: -28px;
+		flex: 1 1 405px;
+		@media (max-width:767px) {
+			margin-bottom: 20px;
+		}
+	}
+	&__column-cards {
+		display: flex;
+		justify-content: flex-end;
+		flex: 1 1 calc(100% - 405px);
+		padding: 0 -10px;
+		@media (max-width:767px) {
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	}
+	&__info {
+		font-size: 20px;
+		font-weight: 700;
+		text-align: left;
+		margin-bottom: calc(15px + (30 - 15) * ((100vw - 320px) / (1440 - 320)));
+	}
+
+	&__text {
+	}
+
+	&__card {
+		width: 140px;
+		height: 224px;
+		margin: 0 10px;
+		@media (max-width:767px) {
+			margin: 10px;
+		}
+
+		&_plan {
+			background: #D8D8D8 url(../img/about/Bitmap-1.jpg) center no-repeat;
+			background-size: cover;
+		}
+
+		&_manage {
+			background: #D8D8D8 url(../img/about/Bitmap-2.jpg) center no-repeat;
+			background-size: cover;
+		}
+
+		&_build {
+			background: #D8D8D8 url(../img/about/Bitmap-3.jpg) center no-repeat;
+			background-size: cover;
+		}
+	}
+
+
+	&__h3 {
+		padding: 20px;
+		font-size: 24px;
+		font-weight: 800;
+		line-height: 29px;
+		color: #ffffff;
+		text-align: left;
+	}
+}

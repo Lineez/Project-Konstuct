@@ -1,0 +1,154 @@
+@font-face {
+	src: url(../fonts/OpenSans-Regular.woff);
+	font-family: 'open-sans';
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	src: url(../fonts/OpenSans-SemiBold.woff);
+	font-family: 'open-sans';
+	font-display: swap;
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	src: url(../fonts/OpenSans-Bold.woff);
+	font-family: 'open-sans';
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	src: url(../fonts/OpenSans-ExtraBold.woff);
+	font-family: 'open-sans';
+	font-display: swap;
+	font-weight: 800;
+	font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+picture,
+img {
+	display: block;
+	font-size: 0;
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+option,
+select,
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: transparent;
+	cursor: pointer;
+	color: inherit;
+	font-size: inherit;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.wrapper {
+	font-size: 18px;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	color: #48555B;
+}
+.wrap {
+	max-width: 970px;
+	padding: 0 15px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.blue {
+	color: #00A4E5;
+}
+
+.h2 {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.h3 {
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.4px;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 40px;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: #00A4E5;
+	color: #ffffff;
+	&:hover {
+	transition: all 0.7s ease 0s;
+	background-color: #0375a1;
+	}
+}
+
+.text {
+	font-size: 13px;
+	text-align: left;
+}
+.info {
+	font-size: 11px;
+	font-weight: 400;
+	letter-spacing: 0.85px;
+	line-height: 19px;
+}
+
+@import '_header';
+@import '_menu';
+@import '_about';
+@import '_services';
+@import '_get';
+@import '_news';
+@import '_footer';
