@@ -15,7 +15,7 @@
 			transform: translate(50%);
 			width: 50px;
 			height: 2px;
-			background-color: #00A4E5;
+			background-color: $mainBlue;
 		}
 	}
 
@@ -65,6 +65,9 @@
 		margin: 0 10px;
 		@media (max-width:767px) {
 			margin: 10px;
+		}
+		@media (max-width:425px) {
+			width: 100%;
 		}
 
 		&_plan {

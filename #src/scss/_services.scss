@@ -24,15 +24,13 @@
 			bottom: 0;
 			width: 50px;
 			height: 2px;
-			background-color: #00A4E5;
+			background-color: $mainBlue;
 			@media (max-width:767px) {
 					left: 50%;
 					transform: translate(-50%);
-
 			}
 		}
 	}
-
 
 	&__info {
 		flex: 0 1 405px;

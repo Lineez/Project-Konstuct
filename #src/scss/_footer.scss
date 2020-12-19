@@ -26,8 +26,11 @@
 	}
 }
 .column {
+	@media (max-width:1024px) {
+		padding-bottom: 15px;
+	}
 
-	&__h4 {
+	&__h2 {
 		font-size: 11px;
 		font-weight: 400;
 		letter-spacing: 0.85px;
@@ -116,8 +119,21 @@
 			margin-right: 0;
 		}
 		&:hover {
-			color: #00A4E5;
+			color: $mainBlueHover;
 			transition: all 0.3s ease 0s;
 		}
+	}
+}
+
+.copy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	background-color: #171819;
+	p {
+		font-size: 11px;
+		letter-spacing: 0.85px;
+		color: #ffffff;
 	}
 }
