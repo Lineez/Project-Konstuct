@@ -22,7 +22,7 @@ let path = {
 		pages: [source_folder + '/pages/**/*.html'],
 		css: source_folder + '/scss/**/*.scss',
 		js: source_folder + '/js/script.js',
-		img: [source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}', "!" + source_folder + '/img/svg2sprite/*.svg'],
+		img: [source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}', "!" + source_folder + '/img/stack/*.svg'],
 		fonts: source_folder + '/fonts/*.ttf',
 		iconFonts: source_folder + '/fonts/icon-font/**/*.*',
 	},
@@ -124,7 +124,7 @@ function images() {
 }
 // Собирает svg файлы в один спрайт
 gulp.task('svg', function () {
-	return gulp.src([source_folder + '/img/svg2sprite/*.svg'])
+	return gulp.src([source_folder + '/img/stack/*.svg'])
 		.pipe(svg({
 			mode: {
 				stack: {
